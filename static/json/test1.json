@@ -1,0 +1,6 @@
+{
+    "name": "zhangsan",
+    "old": 15,
+    "sex": "man",
+    "点击我跳转": "跳转 new router"
+}
