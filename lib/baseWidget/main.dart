@@ -2,15 +2,18 @@
  * @Author: monai
  * @Date: 2021-11-17 15:43:19
  * @LastEditors: monai
- * @LastEditTime: 2021-11-19 17:48:00
+ * @LastEditTime: 2021-11-22 15:01:59
  */
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 part './text.dart';
 part './button.dart';
 part 'image_icon.dart';
 part 'switch_check_box.dart';
 part './textfield_form.dart';
+part './progress_indicator.dart';
+
 
 final String title = '基础组件【widget】示例';
 
@@ -77,6 +80,15 @@ class _BaseWidget extends State<BaseWidget> {
                                 onPressed: (){
                                     setState(() {
                                         showComponent = TextfieldFormWidget();
+                                    });
+                                },
+                            ),
+
+                            ElevatedButton(
+                                child: Text('进度条 widget 相关'),
+                                onPressed: (){
+                                    setState(() {
+                                        showComponent = ProgressindicatorWidget();
                                     });
                                 },
                             ),
