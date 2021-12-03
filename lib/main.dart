@@ -12,6 +12,8 @@ import 'package:flutter_demo/state/main.dart';
 
 import 'package:flutter_demo/baseWidget/main.dart';
 
+import 'package:flutter_demo/layout/main.dart';
+
 void main() {
    
 	// runApp(const Demo1WidgetStateless());
@@ -33,6 +35,9 @@ void main() {
 
     // 基础组件 示例
     runApp(BaseWidget());
+
+    // 弹性布局
+    // runApp(LayoutWidget());
     
 
 }

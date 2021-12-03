@@ -2,10 +2,11 @@
  * @Author: monai
  * @Date: 2021-11-17 15:43:19
  * @LastEditors: monai
- * @LastEditTime: 2021-11-22 15:01:59
+ * @LastEditTime: 2021-12-02 17:35:18
  */
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'dart:math' ;  
 
 part './text.dart';
 part './button.dart';
@@ -13,7 +14,7 @@ part 'image_icon.dart';
 part 'switch_check_box.dart';
 part './textfield_form.dart';
 part './progress_indicator.dart';
-
+part './transform.dart';
 
 final String title = '基础组件【widget】示例';
 
@@ -89,6 +90,15 @@ class _BaseWidget extends State<BaseWidget> {
                                 onPressed: (){
                                     setState(() {
                                         showComponent = ProgressindicatorWidget();
+                                    });
+                                },
+                            ),
+
+                            ElevatedButton(
+                                child: Text('变换 widget 相关'),
+                                onPressed: (){
+                                    setState(() {
+                                        showComponent = TransformWidget();
                                     });
                                 },
                             ),
